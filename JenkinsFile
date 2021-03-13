@@ -6,7 +6,9 @@ node('jenkins-slave') {
            git clone https://github.com/dremond71/rhosapp3.git
            cd ./rhosapp3
            
-           docker build . -t test
+           ls
+           echo 'dom was here' > somefile.txt
+           cat somefile.txt
         """)
     }
 }
